@@ -1,10 +1,10 @@
-# variable "AWS_ACCESS_KEY_ID" {
-#     description = "AWS Access Key for Vault AWS Secret Role"
-# }
+variable "AWS_ACCESS_KEY_ID" {
+    description = "AWS Access Key for Vault AWS Secret Role"
+}
 
-# variable "AWS_SECRET_ACCESS_KEY" {
-#     description = "AWS Secret Access Key for Vault AWS Secret Role"
-# }
+variable "AWS_SECRET_ACCESS_KEY" {
+    description = "AWS Secret Access Key for Vault AWS Secret Role"
+}
 
 variable "aws_region" {
     description = "AWS Region for Vault AWS Secret Role"
