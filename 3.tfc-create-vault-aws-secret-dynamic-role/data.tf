@@ -4,7 +4,7 @@ data "terraform_remote_state" "vault_admin" {
   config = {
     organization = "ARS_SecureOps_Org"
     workspaces = {
-      name = "create-aws-iam-user-tfc"
+      name = "tfc-create-vault-admin-iam-aws"
     }
   }
 }
