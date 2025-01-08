@@ -32,4 +32,10 @@ variable "tier_type" {
     description = "Vault Cluster Tier Type"
     type = string
     default = "starter_small"
-}   
+}
+
+variable "vault_version" {
+    description = "Vault Cluster Minimum Version"
+    type = string
+    default = "1.16.2"
+}
