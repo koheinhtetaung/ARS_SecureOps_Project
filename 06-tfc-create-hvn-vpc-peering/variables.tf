@@ -20,5 +20,5 @@ variable "peer_vpc_region" {
 
 variable "hvn_id" {
   description = "The ID of the HashiCorp Virtual Network (HVN)"
-  default     = "vault-aws-hvn"
+  default     = "hvn"
 }
