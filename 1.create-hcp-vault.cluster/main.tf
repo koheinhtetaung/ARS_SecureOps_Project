@@ -10,6 +10,7 @@ resource "hcp_vault_cluster" "vault_cluster" {
   hvn_id     = hcp_hvn.vault_hvn.hvn_id
   tier       = var.tier_type
   public_endpoint = true
+  min_vault_version = var.vault_version
 }
 
 resource "hcp_vault_cluster_admin_token" "vault_admin_token" {

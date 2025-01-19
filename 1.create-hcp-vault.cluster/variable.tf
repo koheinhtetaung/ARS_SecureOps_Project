@@ -25,11 +25,17 @@ variable "vault_cluster_id" {
 variable "vault_hvn" {
     description = "HCP HVN ID"
     type = string
-    default = "hvn"
+    default = "vault-aws-hvn"
 }
 
 variable "tier_type" {
     description = "Vault Cluster Tier Type"
     type = string
-    default = "starter_small"
+    default = "dev"
+}
+
+variable "vault_version" {
+    description = "Vault Cluster Minimum Version"
+    type = string
+    default = "1.16.2"
 }
