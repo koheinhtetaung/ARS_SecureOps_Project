@@ -13,9 +13,9 @@ data "aws_arn" "vpc_arn" {
   arn = data.aws_vpc.master_aws_vpc.arn
 }
 
-data "aws_subnets" "all_subnets" {
+# data "aws_subnets" "all_subnets" {
 
-}
+# }
 
 data "aws_subnets" "private_subnet_ids" {
   filter {
