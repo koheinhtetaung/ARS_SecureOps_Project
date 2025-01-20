@@ -1,8 +1,8 @@
-variable "aws_region" {
-  type        = string
-  default     = "ap-southeast-1"
-  description = "AWS region for all resources"
-}
+# variable "aws_region" {
+#   type        = string
+#   default     = "ap-southeast-1"
+#   description = "AWS region for all resources"
+# }
 
 variable "tfc_aws_audience" {
   type        = string
