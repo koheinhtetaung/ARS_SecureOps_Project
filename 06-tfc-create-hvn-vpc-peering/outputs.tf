@@ -3,10 +3,10 @@ output "vpc_owner_id" {
   value       = data.aws_vpc.master_aws_vpc.owner_id
 }
 
-output "all_subnets" {
-  description = "a set of subnet IDs"
-  value       = data.aws_subnets.all_subnets.ids
-}
+# output "all_subnets" {
+#   description = "a set of subnet IDs"
+#   value       = data.aws_subnets.all_subnets.ids
+# }
 
 output "private_subnet_id" {
   description = "a set of private subnet id"
