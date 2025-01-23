@@ -1,17 +1,17 @@
 variable "workspace_name" {
   description = "Workspace Name"
   type        = string
-  default     = "Step07_1_Create_Ec2_Vault_AWS_Auth_method" ### have to change WorkSpace Name
+  default     = "07_1-tfc-create-vault-aws-auth-backend" ### have to change WorkSpace Name
 }
 variable "org_name" {
   description = "Organization Name"
   type        = string
-  default     = "SecureOps_Project" ### have to change ORG ID
+  default     = "ARS_SecureOps_Org" ### have to change ORG ID
 }
 variable "vault_url" {
   description = "The address of the Vault instance runs will access."
   type        = string
-  default     = "https://hcp-vault-cluster-public-vault-bde3da3c.a82db95d.z1.hashicorp.cloud:8200" ### have to change new vault cluster id
+  default     = "https://hcp-vault-cluster-public-vault-eb26cd94.98781eec.z1.hashicorp.cloud:8200" ### have to change new vault cluster id
 }
 variable "run_role" {
   description = "TFC_VAULT_RUN_ROLE"
@@ -51,5 +51,5 @@ variable "aws_region" {
 variable "tfc_aws_run_role_arn" {
   description = "AWS Role for TFC Provider"
   type        = string
-  default     = "arn:aws:iam::230788615808:role/tfc-aws-role"
+  default     = "arn:aws:iam::767397769779:role/tfc-aws-role"
 }

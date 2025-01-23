@@ -40,6 +40,10 @@ resource "aws_iam_role_policy" "vault-client" {
   policy = data.aws_iam_policy_document.vault-client.json
 }
 
+resource "aws_iam_instance_profile" "vault-client" {
+  name = "${var.vault-client-role}-vault-client-instance-profile"
+  role = aws_iam_role.vault-client.id
+}
 
 //--------------------------------------------------------------------
 // Data Sources
