@@ -14,7 +14,7 @@ $ vault policy write db-policy db-policy.hcl
 ## Create a AWS Auth Role
 $ vault write auth/aws/role/db-role \
      auth_type=iam \
-	 bound_iam_principal_arn=arn:aws:iam::767397769779:role/vault-ec2-auth-role \
+	 bound_iam_principal_arn=arn:aws:iam::76739ddddddd:role/vault-ec2-auth-role \
 	 policies=db-policy
 $ vault read auth/aws/role/db-role
 
@@ -27,7 +27,7 @@ $ vault login -method=aws role=db-role
 $ export VAULT_Token="hvs.xxxx"
 $ vault read aws-master-account/creds/master-adminaccess-role
 
-export AWS_ACCESS_KEY_ID=AKIA2UC3FHN7WNOG23GB
-export AWS_SECRET_ACCESS_KEY=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
+export AWS_ACCESS_KEY_ID=Axxxxx
+export AWS_SECRET_ACCESS_KEY=NLdEPeRhyx+xxxxxxxx
 
 aws sts get-caller-identity
