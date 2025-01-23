@@ -2,8 +2,8 @@
 $ vault auth enable aws
 $ vault auth list
 
-$ export access_key="AKIA3FLDYWIZ4RDZNXVF"
-$ export secret_key="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"
+$ export access_key="ddfdfdf"
+$ export secret_key="ddfd"
 $ vault write /auth/aws/config/client access_key=$access_key secret_key=$secret_key
 $ vault read /auth/aws/config/client
 
@@ -14,7 +14,7 @@ $ vault policy write db-policy db-policy.hcl
 ## Create a AWS Auth Role
 $ vault write auth/aws/role/db-role \
      auth_type=iam \
-	 bound_iam_principal_arn=arn:aws:iam::230788615808:role/AWS-Ec2-Role \
+	 bound_iam_principal_arn=arn:aws:iam::767397769779:role/vault-ec2-auth-role \
 	 policies=db-policy
 $ vault read auth/aws/role/db-role
 
